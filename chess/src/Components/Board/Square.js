@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./style.css"
-import Knight from '../Pieces/Knight';
+import Piece from './Piece';
 
 
 class Square extends Component {
@@ -15,8 +15,7 @@ class Square extends Component {
     render() {
         return (
             <div className={`square  ${this.color} same-row`}>
-                {this.props.children}
-                <Knight color={this.color}/>
+                <Piece number={this.number}/>
             </div>
         );
     }
