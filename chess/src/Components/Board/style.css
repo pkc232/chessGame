@@ -1,0 +1,16 @@
+.square{
+    height: 40px;
+    width: 40px;
+}
+
+.black{
+    background-color: black;
+}
+
+.white{
+    background-color: orange;
+}
+
+.same-row{
+    display: inline-block;
+}
