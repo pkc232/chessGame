@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import "./style.css"
+import Knight from '../Pieces/Knight';
+
+
 class Square extends Component {
     constructor(props) {
         super(props);
@@ -13,7 +16,7 @@ class Square extends Component {
         return (
             <div className={`square  ${this.color} same-row`}>
                 {this.props.children}
-                <span style={{fontSize:"1px"}}>1</span>
+                <Knight color={this.color}/>
             </div>
         );
     }
