@@ -21,9 +21,7 @@ const squareValuesReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FILL_SQUARE':{
       const valueToFill = action.payload;
-      let newState = {
-        ...state
-      };
+      let newState = state;
       const {row, column, piece} = valueToFill;
       newState[row][column] =  {
         ...state[row][column],
