@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Square from './Square';
+import {connect} from 'react-redux'
 
 class Board extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            squares: this.initializeBoard() 
+            squares: this.initializeBoard()
         }
     }
 
@@ -40,5 +41,6 @@ class Board extends Component {
         );
     }
 }
+
 
 export default Board;

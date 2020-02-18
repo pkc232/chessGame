@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./style.css"
 import Piece from './Piece';
+import {connect} from 'react-redux';
 
 
 class Square extends Component {
@@ -13,12 +14,24 @@ class Square extends Component {
     }
     
     render() {
+        const squareValue = this.props.squareValues[this.row][this.column];
+        const {type, piece} = squareValue;
         return (
             <div className={`square  ${this.color} same-row`}>
-                <Piece number={this.number}/>
+                {
+                    type === 'piece' &&
+                    <Piece piece={piece} />
+                }
             </div>
         );
+        
     }
 }
 
-export default Square;
+const mapStateToProps = (state) => {
+    return {
+        squareValues: state.squareValues
+    }
+}
+
+export default connect(mapStateToProps)(Square);

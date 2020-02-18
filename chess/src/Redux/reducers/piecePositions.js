@@ -4,7 +4,7 @@ const initialState = {
       remaining:1,
       1:{
       row:7,
-      column:4,
+      column:3,
       color: 'black',
       type: 'king'
       }
@@ -13,7 +13,7 @@ const initialState = {
       remaining:1,
       1:{
       row:0,
-      column:4,
+      column:3,
       color: 'white',
       type: 'king'
       }
@@ -33,7 +33,7 @@ const initialState = {
       remaining:1,
       1:{
       row:0,
-      column:3,
+      column:4,
       color: 'white',
       type: 'queen'
       }
@@ -190,49 +190,49 @@ const initialState = {
     white:{
       remaining: 8,
       1:{
-        row: 0,
+        row: 1,
         column: 0,
         color:'white',
         type:'pawn'
       },
       2:{
-        row: 0,
+        row: 1,
         column: 1,
         color:'white',
         type:'pawn'
       },
       3:{
-        row: 0,
+        row: 1,
         column: 2,
         color:'white',
         type:'pawn'
       },
       4:{
-        row: 0,
+        row: 1,
         column: 3,
         color:'white',
         type:'pawn'
       },
       5:{
-        row: 0,
+        row: 1,
         column: 4,
         color:'white',
         type:'pawn'
       },
       6:{
-        row: 0,
+        row: 1,
         column: 5,
         color:'white',
         type:'pawn'
       },
       7:{
-        row: 0,
+        row: 1,
         column: 6,
         color:'white',
         type:'pawn'
       },
       8:{
-        row: 0,
+        row: 1,
         column: 7,
         color:'white',
         type:'pawn'

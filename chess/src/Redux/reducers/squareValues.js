@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 const getInitialSquareValues = (row, column) => {
     let mat = new Array(row);
     for(let i = 0; i< column; i++)
@@ -21,7 +23,7 @@ const squareValuesReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FILL_SQUARE':{
       const valueToFill = action.payload;
-      let newState = state;
+      let newState = _.cloneDeep(state);
       const {row, column, piece} = valueToFill;
       newState[row][column] =  {
         ...state[row][column],
@@ -32,9 +34,7 @@ const squareValuesReducer = (state = initialState, action) => {
     }
     case 'EMPTY_SQUARE':{
       const valueToEmpty = action.payload;
-      let newState = {
-        ...state
-      };
+      let newState = _.cloneDeep(state);
       const {row, column} = valueToEmpty;
       newState[row][column] =  {
         ...state[row][column],
