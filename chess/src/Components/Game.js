@@ -12,6 +12,15 @@ class Game extends Component {
     }
 
     setPieces = () =>{
+        for(let i=0;i<8;i++){
+            for(let j=0;j<8;j++){
+                this.props.dispatch({type:'EMPTY_SQUARE', payload:{
+                    row: i,
+                    column: j
+                }})
+            }
+        }
+
         const piecePositions = this.props.piecePositions;
         const keys = Object.keys(piecePositions);
         keys.forEach(key => {

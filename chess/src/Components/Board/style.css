@@ -14,3 +14,7 @@
 .same-row{
     display: inline-block;
 }
+
+.selected-square{
+    background-color: greenyellow;
+}

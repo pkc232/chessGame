@@ -25,7 +25,6 @@ const componentMapping = {
 
 class Piece extends Component {
     render() {
-        console.log('Printing piece');
         const key = `${this.props.piece.color}_${this.props.piece.type}`;
         return (
             <span style={{fontSize:'13px'}}>
