@@ -30,6 +30,12 @@ class Square extends Component {
                 payload:{
                     row: position.row, column: position.column
                 }});
+        this.props.dispatch({type:'EMPTY_SQUARE', payload:{
+            row: this.row,
+            column: this.column,
+            piece
+        }});
+        
         this.props.dispatch({type:'FILL_SQUARE', payload:{
             row: this.row,
             column: this.column,

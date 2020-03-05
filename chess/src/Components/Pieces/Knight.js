@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { getKnightMoves } from './moveConstructor';
 
 class Knight extends Component {
     constructor(props) {
@@ -14,6 +15,11 @@ class Knight extends Component {
         }
     }
     
+    getValidPositions(){
+        const row = this.state.row, column = this.state.column;
+        return getKnightMoves(row, column);
+    }
+
     render() {
         return (
             <div>

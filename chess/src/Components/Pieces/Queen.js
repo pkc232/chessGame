@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {getDiagonalMoves, getHorizontalMoves, getVerticalMoves} from "./moveConstructor"
 
 class Queen extends Component {
     constructor(props) {
@@ -12,6 +13,15 @@ class Queen extends Component {
             row:            this.props.row,
             column:         this.props.column
         }
+    }
+
+    getValidPositions = () => {
+        const row = this.state.row, column = this.state.column;
+        let possiblePos = [];
+        possiblePos = [...possiblePos, ...getDiagonalMoves(row,column)];
+        possiblePos = [...possiblePos, ...getHorizontalMoves(row, column)];
+        possiblePos = [...possiblePos, ...getVerticalMoves(row, column)];
+        return possiblePos;
     }
     
     render() {

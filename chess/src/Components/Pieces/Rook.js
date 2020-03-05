@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { getHorizontalMoves, getVerticalMoves } from './moveConstructor';
 
 class Rook extends Component {
     constructor(props) {
@@ -12,6 +13,14 @@ class Rook extends Component {
             row:            this.props.row,
             column:         this.props.column
         }
+    }
+
+    getValidPositions(){
+        const row= this.state.row, column = this.state.column;
+        let possiblePositions = [];
+        possiblePositions = [...possiblePositions, ...getHorizontalMoves(row, column)];
+        possiblePositions = [...possiblePositions, ...getVerticalMoves(row, column)];
+        return possiblePositions;
     }
     
     render() {

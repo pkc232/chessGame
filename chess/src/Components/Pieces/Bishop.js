@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {getDiagonalMoves} from "./moveConstructor"
 
 class Bishop extends Component {
     constructor(props) {
@@ -12,6 +13,11 @@ class Bishop extends Component {
             row:            this.props.row,
             column:         this.props.column
         }
+    }
+
+    getValidPositions(){
+        const row = this.state.row, column = this.state.column;
+        return getDiagonalMoves(row, column);
     }
     
     render() {
