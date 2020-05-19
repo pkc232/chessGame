@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/pkc-chess/static/css/main.5c9c5fcb.chunk.css",
-    "main.js": "/pkc-chess/static/js/main.1cbe862b.chunk.js",
-    "main.js.map": "/pkc-chess/static/js/main.1cbe862b.chunk.js.map",
-    "runtime-main.js": "/pkc-chess/static/js/runtime-main.fb1419b3.js",
-    "runtime-main.js.map": "/pkc-chess/static/js/runtime-main.fb1419b3.js.map",
-    "static/js/2.4a60ab55.chunk.js": "/pkc-chess/static/js/2.4a60ab55.chunk.js",
-    "static/js/2.4a60ab55.chunk.js.map": "/pkc-chess/static/js/2.4a60ab55.chunk.js.map",
-    "index.html": "/pkc-chess/index.html",
-    "precache-manifest.ebae7bfaaaaae75693b8f9efb26a0031.js": "/pkc-chess/precache-manifest.ebae7bfaaaaae75693b8f9efb26a0031.js",
-    "service-worker.js": "/pkc-chess/service-worker.js",
-    "static/css/main.5c9c5fcb.chunk.css.map": "/pkc-chess/static/css/main.5c9c5fcb.chunk.css.map",
-    "static/js/2.4a60ab55.chunk.js.LICENSE.txt": "/pkc-chess/static/js/2.4a60ab55.chunk.js.LICENSE.txt"
+    "main.css": "/chessGame/static/css/main.5c9c5fcb.chunk.css",
+    "main.js": "/chessGame/static/js/main.1cbe862b.chunk.js",
+    "main.js.map": "/chessGame/static/js/main.1cbe862b.chunk.js.map",
+    "runtime-main.js": "/chessGame/static/js/runtime-main.4b9695ad.js",
+    "runtime-main.js.map": "/chessGame/static/js/runtime-main.4b9695ad.js.map",
+    "static/js/2.4a60ab55.chunk.js": "/chessGame/static/js/2.4a60ab55.chunk.js",
+    "static/js/2.4a60ab55.chunk.js.map": "/chessGame/static/js/2.4a60ab55.chunk.js.map",
+    "index.html": "/chessGame/index.html",
+    "precache-manifest.dfebe9534342de7ee7034ae2e1f77657.js": "/chessGame/precache-manifest.dfebe9534342de7ee7034ae2e1f77657.js",
+    "service-worker.js": "/chessGame/service-worker.js",
+    "static/css/main.5c9c5fcb.chunk.css.map": "/chessGame/static/css/main.5c9c5fcb.chunk.css.map",
+    "static/js/2.4a60ab55.chunk.js.LICENSE.txt": "/chessGame/static/js/2.4a60ab55.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb1419b3.js",
+    "static/js/runtime-main.4b9695ad.js",
     "static/js/2.4a60ab55.chunk.js",
     "static/css/main.5c9c5fcb.chunk.css",
     "static/js/main.1cbe862b.chunk.js"
