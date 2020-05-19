@@ -41,8 +41,9 @@ class Game extends Component {
     render() {
         return (
             <div>
+                <div>THis is the best isnt it</div>
                 <Board />
-                <button onClick={this.setPieces}>Initialize Board</button>
+                <button onClick={this.setPieces}>Initialize Board. Cmon babe</button>
             </div>
         );
     }
