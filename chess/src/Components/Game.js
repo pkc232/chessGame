@@ -43,7 +43,7 @@ class Game extends Component {
             <div>
                 <div>THis is the best isnt it</div>
                 <Board />
-                <button onClick={this.setPieces}>Initialize Board. Cmon babe</button>
+                <button onClick={this.setPieces}>Initialize Board. Cmon babe. Let us do it</button>
             </div>
         );
     }
